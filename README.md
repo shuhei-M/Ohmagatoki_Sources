@@ -1,10 +1,11 @@
 # 逢魔ヶ刻
+![Title](https://github.com/shuhei-M/Ohmagatoki_Sources/assets/103874162/8c6f0886-e925-4374-b152-2e0a6c1a20c1)
 - ジャンル　：アクションRPG  
 - 開発目的　：卒業制作作品  
 - 開発期間　：約1年（2023/1/30 ～ 2024/2/15）  
 - チーム構成：計9名（企画2名 ／ デザイン4名 ／ プログラム3名）  
 - 開発環境　：Unity2021.3.17f(HDRP)、VisualStudio2022、GitHub、VisualStudioCode  
-- [ティザームービー（約1分）](https://www.youtube.com/watch?v=7gly7UXas88)  
+- [ティザームービー（youtube, 約1分）](https://www.youtube.com/watch?v=7gly7UXas88)  
     - 本動画はチームリーダーが制作してくれたものになります。  
 <br><br>
 
@@ -21,7 +22,7 @@
     - プレイヤーのエフェクト  
     - インゲームのスクリーンエフェクト  
 - その他、細々とした仕事多数......  
-- [工夫点一部紹介動画（約2分半）](https://www.youtube.com/watch?v=7gly7UXas88)  
+- [工夫点一部紹介動画（youtube, 約2分半）](https://youtu.be/VHgBu-7Wwzk)  
 <br><br>
 
 
