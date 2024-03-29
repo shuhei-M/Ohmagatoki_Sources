@@ -40,7 +40,7 @@
 | --- | --- | --- |
 | [GameModeController.cs](/Scripts/Controller/GameModeController.cs) | シーン遷移など、ゲーム全体の進行を司るシングルトンクラス。 |  |
 | [DataGameMode.cs](/Scripts/Controller/DataGameMode.cs) | シーン遷移など、ゲーム全体の進行を司るシングルトンクラス。 |  |
-| ▼[Cutsceneフォルダ](/Scripts/Controller/Cutscene) |  | 雛形・シーン遷移は松島、その他は寺林さん。 |
+| ▼[Cutsceneフォルダ](/Scripts/Controller/Cutscene) |  | 雛形・シーン遷移は松島、その他はカットシーン担当。 |
 | [EdCutsceneController.cs](/Scripts/Controller/Cutscene/EdCutsceneController.cs) | CutsceneControllerBaseクラスの派生クラス。エンディングカットシーン用。 |  |
 | [MidCutsceneController.cs](/Scripts/Controller/Cutscene/MidCutsceneController.cs) | CutsceneControllerBaseクラスの派生クラス。中盤（ボス直前）カットシーン用。 |  |
 | [OpCutsceneController.cs](/Scripts/Controller/Cutscene/OpCutsceneController.cs) | CutsceneControllerBaseクラスの派生クラス。オープニングカットシーン用。 |  |
@@ -62,14 +62,14 @@
 | [AnimatorEditorUtility.cs](/Scripts/Editor/AnimatorEditorUtility.cs) | Utility/AnimatorStateEvent.csも参照の事。 |  |
 | [CopySpringBone.cs](/Scripts/Editor/CopySpringBone.cs) | コピー元のプレハブから、ペースト先のプレハブへ、全てのSpringBornコンポーネントのヒエラルキー上の値をコピペする。 | プレイヤー揺れ者担当用のツール |
 | [FindReferenceAsset.cs](/Scripts/Editor/FindReferenceAsset.cs) | Editor拡張。オブジェクトの参照を確認する。オブジェクトを右クリックし、そこから「参照を探す」を選択。0個であれば、そのオブジェクトをプロジェクトファイルから削除することを検討する。 |  |
-| [PlayerParamEditor.cs](/Scripts/Editor/PlayerParamEditor.cs) | プレイヤーパラメーターScriptableObject用のEditor拡張。<rb>インスペクター上で初期化ボタンを表示させる。 |  |
-| [SceneUnit.cs](/Scripts/Editor/SceneUnit.cs) |  |  |
-| [SceneUnitWindow.cs](/Scripts/Editor/SceneUnitWindow.cs) |  |  |
+| [PlayerParamEditor.cs](/Scripts/Editor/PlayerParamEditor.cs) | プレイヤーパラメーターScriptableObject用のEditor拡張。<br>インスペクター上で初期化ボタンを表示させる。 |  |
+| [SceneUnit.cs](/Scripts/Editor/SceneUnit.cs) | エディタ上で楽にシーンを開く拡張機能。複数のシーンの切り替えを一瞬で出来る。<br>複数のシーンをまとめるクラス。 |  |
+| [SceneUnitWindow.cs](/Scripts/Editor/SceneUnitWindow.cs) | エディタ上で楽にシーンを開く拡張機能。複数のシーンの切り替えを一瞬で出来る。<br>複数のシーンの一度に開くためのウィンドウクラス。 |  |
 ## [Effectフォルダ](/Scripts/Effect)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
-| [CustomPassesManager.cs](/Scripts/Effect/CustomPassesManager.cs) |  |  |
-| [Effect_HealBell.cs](/Scripts/Effect/Effect_HealBell.cs) |  |  |
+| [CustomPassesManager.cs](/Scripts/Effect/CustomPassesManager.cs) | 自作した2つのHDRPのカスタムパスのON・OFFを操作する。<br>①敵が遮ってプレイヤーがカメラから見えなくなった時、ディザ抜き形式でプレイヤーのシルエットを浮かび上がらせる。<br>②プレイヤーのシルエットを縁取るようなグローエフェクトを発生させ、あたかもオーラをまとっているように見せる。|  |
+| [Effect_HealBell.cs](/Scripts/Effect/Effect_HealBell.cs) | 回復の鈴エフェクトを右手のひらに追従させる処理。 |  |
 ## [Gamepadフォルダ](/Scripts/Gamepad)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
