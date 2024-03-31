@@ -149,15 +149,15 @@
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
 | [AnimatorStateEvent.cs](/Scripts/Utility/AnimatorStateEvent.cs) | Editor/AnimatorEditorUtility.csも参照の事。 |  |
-| [DebugLogDisplay.cs](/Scripts/Utility/DebugLogDisplay.cs) |  |  |
-| [GameTimer.cs](/Scripts/Utility/GameTimer.cs) |  |  |
+| [DebugLogDisplay.cs](/Scripts/Utility/DebugLogDisplay.cs) | 実行ファイル上でも、デバッグキーを入力するとデバッグログが見えるようになる処理。 |  |
+| [GameTimer.cs](/Scripts/Utility/GameTimer.cs) | 「何秒たったら〇〇する」といった処理に利用できる、時間計測用の汎用クラス。 |  |
 | [MinMax.cs](/Scripts/Utility/MinMax.cs) |  |  |
 | [Quit.cs](/Scripts/Utility/Quit.cs) | 実行ファイル上でEscapeキーを押すと強制終了できる。 |  |
-| [ReverseCollider.cs](/Scripts/Utility/ReverseCollider.cs) |  |  |
+| [ReverseCollider.cs](/Scripts/Utility/ReverseCollider.cs) | 当たり判定の裏表を反転させる。<br>ボスステージでのプレイヤーの行動範囲を制限するのに使用。 |  |
 | [SingletonMonoBehaviour.cs](/Scripts/Utility/SingletonMonoBehaviour.cs) | シングルトンパターンのジェネリッククラス。<br>GameModeControllerクラスや各種Managerクラスにて使用。 |  |
 | [StateMachine.cs](/Scripts/Utility/StateMachine.cs) | ステートマシン（有限オートマトン）を作成するジェネリッククラス。<br>PlayerBehaviourクラス（主にPlayerB_State.cs）にて使用。 |  |
-| [TagAttribute.cs](/Scripts/Utility/TagAttribute.cs) |  |  |
-| [UnscaledGameTimer.cs](/Scripts/Utility/UnscaledGameTimer.cs) |  |  |
+| [TagAttribute.cs](/Scripts/Utility/TagAttribute.cs) | タグ名をインスペクターから選択できるようにする。 |  |
+| [UnscaledGameTimer.cs](/Scripts/Utility/UnscaledGameTimer.cs) | 「何秒たったら〇〇する」といった処理に利用できる、時間計測用の汎用クラス。<br>タイムスケールに変更が加えられていても実世界の時間を計測する。 |  |
 
 <!-- 
 | [.cs]() |  |
