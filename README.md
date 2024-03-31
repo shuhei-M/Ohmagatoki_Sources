@@ -133,18 +133,18 @@
 ## [UIフォルダ](/Scripts/UI)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
-| [ChapterPanelUI.cs](/Scripts/UI/ChapterPanelUI.cs) |  |  |
-| [DamagePopupTextAnimator.cs](/Scripts/UI/DamagePopupTextAnimator.cs) |  |  |
-| [DamageTextPanel.cs](/Scripts/UI/DamageTextPanel.cs) |  |  |
-| [DyingPanel.cs](/Scripts/UI/DyingPanel.cs) |  |  |
-| [EffectCanvas.cs](/Scripts/UI/EffectCanvas.cs) |  |  |
-| [LockonCursorPanelUI.cs](/Scripts/UI/LockonCursorPanelUI.cs) |  |  |
-| [UiData.cs](/Scripts/UI/UiData.cs) |  |  |
+| [ChapterPanelUI.cs](/Scripts/UI/ChapterPanelUI.cs) | メインメニューシーンでのチャプター選択機能。 | 雛形のみを実装。 |
+| [DamagePopupTextAnimator.cs](/Scripts/UI/DamagePopupTextAnimator.cs) | ダメージ値と座標を受け取り、画面の任意の場所にダメージ値のポップアップアニメーションを再生させる。 |  |
+| [DamageTextPanel.cs](/Scripts/UI/DamageTextPanel.cs) | 画面上に表示させるTextを一括で管理する。<br>DamagePopupTextAnimator.csを利用してダメージ値を表示させる。 |  |
+| [DyingPanel.cs](/Scripts/UI/DyingPanel.cs) | プレイヤーが瀕死の際、画面の淵を赤く点滅させる。 |  |
+| [EffectCanvas.cs](/Scripts/UI/EffectCanvas.cs) | 高速移動時に集中線エフェクトを表示させる。 |  |
+| [LockonCursorPanelUI.cs](/Scripts/UI/LockonCursorPanelUI.cs) | ロックオンカーソルを表示し、ターゲートにカーソルを追尾させる。 |  |
+| [UiData.cs](/Scripts/UI/UiData.cs) | 説明UIなどで使う文字列を格納するスクリプタブルオブジェクト。 |  |
 | ▼[Baseフォルダ](/Scripts/UI/Base) |  |  |
-| [PanelUIBase.cs](/Scripts/UI/Base/PanelUIBase.cs) |  |  |
+| [PanelUIBase.cs](/Scripts/UI/Base/PanelUIBase.cs) | パネルUIの汎用操作をまとめた機体クラス。 | 雛形のみを実装。 |
 | ▼[TutorialUIフォルダ](/Scripts/UI/TutorialUI) |  |  |
-| [BaseTaskPanel.cs](/Scripts/UI/TutorialUI/BaseTaskPanel.cs) |  |  |
-| [TutorialCanvas.cs](/Scripts/UI/TutorialUI/TutorialCanvas.cs) |  |  |
+| [BaseTaskPanel.cs](/Scripts/UI/TutorialUI/BaseTaskPanel.cs) | チュートリアルステージの説明UIクラス。 | 雛形のみを実装。 |
+| [TutorialCanvas.cs](/Scripts/UI/TutorialUI/TutorialCanvas.cs) | チュートリアルステージのタスク表示を行うクラス。<br>タスクが進む毎に表示させるパネルを切り替える。 |  |
 ## [Utilityフォルダ](/Scripts/Utility)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
