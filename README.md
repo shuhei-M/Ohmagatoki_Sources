@@ -117,19 +117,19 @@
 ## [Soundフォルダ](/Scripts/Sound)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
-| [BaseAudioClips.cs](/Scripts/Sound/BaseAudioClips.cs) |  |  |
-| [BGM_CutsceneAudioClips.cs](/Scripts/Sound/BGM_CutsceneAudioClips.cs) |  |  |
-| [BGM_OutGameAudioClips.cs](/Scripts/Sound/BGM_OutGameAudioClips.cs) |  |  |
-| [BGM_StageAudioClips.cs](/Scripts/Sound/BGM_StageAudioClips.cs) |  |  |
-| [SE_BossEnemyAudioClips.cs](/Scripts/Sound/SE_BossEnemyAudioClips.cs) |  |  |
-| [SE_CutsceneAudioClips.cs](/Scripts/Sound/SE_CutsceneAudioClips.cs) |  |  |
-| [SE_NormalEnemyAudioClips.cs](/Scripts/Sound/SE_NormalEnemyAudioClips.cs) |  |  |
-| [SE_OutGameAudioClips.cs](/Scripts/Sound/SE_OutGameAudioClips.cs) |  |  |
-| [SE_PlayerAudioClips.cs](/Scripts/Sound/SE_PlayerAudioClips.cs) |  |  |
-| [SE_StageAudioClips.cs](/Scripts/Sound/SE_StageAudioClips.cs) |  |  |
-| [SE_UIAudioClips.cs](/Scripts/Sound/SE_UIAudioClips.cs) |  |  |
-| [SoundsData.cs](/Scripts/Sound/SoundsData.cs) |  |  |
-| [SoundsManager.cs](/Scripts/Sound/SoundsManager.cs) |  |  |
+| [BaseAudioClips.cs](/Scripts/Sound/BaseAudioClips.cs) | 音声ファイルを種類・使用場所ごとにまとめるスクリプタブルオブジェクトの基底クラス。<br>音声ファイルとそれぞれの音声の音量設定ができる。 |  |
+| [BGM_CutsceneAudioClips.cs](/Scripts/Sound/BGM_CutsceneAudioClips.cs) | カットシーンにおけるBGMを格納。 |  |
+| [BGM_OutGameAudioClips.cs](/Scripts/Sound/BGM_OutGameAudioClips.cs) | アウトゲームにおけるBGMを格納。 |  |
+| [BGM_StageAudioClips.cs](/Scripts/Sound/BGM_StageAudioClips.cs) | 各ステージ（インゲーム）におけるBGMを格納。 |  |
+| [SE_BossEnemyAudioClips.cs](/Scripts/Sound/SE_BossEnemyAudioClips.cs) | ボス敵が発生させるSEを格納。 |  |
+| [SE_CutsceneAudioClips.cs](/Scripts/Sound/SE_CutsceneAudioClips.cs) | カットシーンにおけるSEを格納。 |  |
+| [SE_NormalEnemyAudioClips.cs](/Scripts/Sound/SE_NormalEnemyAudioClips.cs) | ザコ敵が発生させるSEを格納。 |  |
+| [SE_OutGameAudioClips.cs](/Scripts/Sound/SE_OutGameAudioClips.cs) | アウトゲームにおけるSEを格納。 |  |
+| [SE_PlayerAudioClips.cs](/Scripts/Sound/SE_PlayerAudioClips.cs) | プレイヤーが発生させるSEを格納。 |  |
+| [SE_StageAudioClips.cs](/Scripts/Sound/SE_StageAudioClips.cs) | 各ステージ（インゲーム）におけるSEを格納。 |  |
+| [SE_UIAudioClips.cs](/Scripts/Sound/SE_UIAudioClips.cs) | UIが発生させるSEを格納。 |  |
+| [SoundsData.cs](/Scripts/Sound/SoundsData.cs) | 音声ファイルをまとめた上記のスクリプタブルオブジェクトを更に一括でまとめて管理する。<br>SoundsManager.csはこのスクリプタブルオブジェクトから音声ファイルを取得する。 |  |
+| [SoundsManager.cs](/Scripts/Sound/SoundsManager.cs) | シングルトンパターンを用いて2Dサウンド（立体的な音響ではない音）を再生させる。<br>BGM,SE再生用関数ともに音量設定など細かな要素を関数の引数で設定できる。 |  |
 ## [UIフォルダ](/Scripts/UI)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
