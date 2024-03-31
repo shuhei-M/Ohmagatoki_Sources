@@ -73,7 +73,7 @@
 ## [Gamepadフォルダ](/Scripts/Gamepad)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
-| [VibrationManager.cs](/Scripts/Gamepad/VibrationManager.cs) | コントローラーを振動させるシングルトンクラス。 |  |
+| [VibrationManager.cs](/Scripts/Gamepad/VibrationManager.cs) | コントローラーを振動させるシングルトンクラス。 | 【工夫】シングルトンパターンのジェネリッククラス（SingletonMonoBehaviour）を継承し、どのクラスからもVibrateControllerOneShot関数で、コントローラーを振動させることができる。 |
 ## [Gimmickフォルダ](/Scripts/Gimmick)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
@@ -109,11 +109,11 @@
 ## [Post-processingフォルダ](/Scripts/Post-processing)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
-| [PostProcessingManager.cs](/Scripts/Post-processing/PostProcessingManager.cs) |  |  |
-| [RadialBlur.cs](/Scripts/Post-processing/RadialBlur.cs) |  |  |
-| [RadialBlur.shader](/Scripts/Post-processing/RadialBlur.shader) |  |  |
-| [ScreenColor.cs](/Scripts/Post-processing/ScreenColor.cs) |  |  |
-| [ScreenColor.shader](/Scripts/Post-processing/ScreenColor.shader) |  |  |
+| [PostProcessingManager.cs](/Scripts/Post-processing/PostProcessingManager.cs) | インゲームの状況に応じて画面にポストエフェクトをかけるシングルトンクラス。<br>高速移動時のモーションブラー、ジャスト回避・ポーズ・ゲームオーバー時に画面の色調を変更する処理、ダメージを受けた際の場面を一度だけ赤く点滅させる処理を行う。 | 【工夫】シングルトンパターンのジェネリッククラス（SingletonMonoBehaviour）を継承し、どのクラスからもポストエフェクトを変更できる。 |
+| [RadialBlur.cs](/Scripts/Post-processing/RadialBlur.cs) | モーションブラー用の自作ボリュームコンポーネント。<br>モーションブラーの強さなどを設定できる。 |  |
+| [RadialBlur.shader](/Scripts/Post-processing/RadialBlur.shader) | モーションブラーのシェーダ。 |  |
+| [ScreenColor.cs](/Scripts/Post-processing/ScreenColor.cs) | 画面の色調を変更する自作のボリュームコンポーネント。 |  |
+| [ScreenColor.shader](/Scripts/Post-processing/ScreenColor.shader) | 画面の色調を変更するシェーダ。 |  |
 ## [Soundフォルダ](/Scripts/Sound)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
