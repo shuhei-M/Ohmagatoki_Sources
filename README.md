@@ -77,10 +77,10 @@
 ## [Gimmickフォルダ](/Scripts/Gimmick)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
-| [GoalWayPointManager.cs](/Scripts/Gimmick/GoalWayPointManager.cs) |  |  |
-| [TaskWallBehaviour.cs](/Scripts/Gimmick/TaskWallBehaviour.cs) |  |  |
-| [TutorialClearArea.cs](/Scripts/Gimmick/TutorialClearArea.cs) |  |  |
-| [UnderProtectiveWall.cs](/Scripts/Gimmick/UnderProtectiveWall.cs) |  |  |
+| [GoalWayPointManager.cs](/Scripts/Gimmick/GoalWayPointManager.cs) | チュートリアルステージの目的地を示すエフェクトを制御する。<br>エフェクトが移動可能地点に到達するまでプレイヤーと一定距離を保つように移動させる。 |  |
+| [TaskWallBehaviour.cs](/Scripts/Gimmick/TaskWallBehaviour.cs) | チュートリアルステージにてプレイヤーの進行可能領域を制限する透明な壁を制御する。 |  |
+| [TutorialClearArea.cs](/Scripts/Gimmick/TutorialClearArea.cs) | プレイヤーがチュートリアルステージのゴール地点に到達したかどうか判定する。 |  |
+| [UnderProtectiveWall.cs](/Scripts/Gimmick/UnderProtectiveWall.cs) | プレイヤーがステージの床を突き抜けた場合、強制的に地上へ戻す。 |  |
 ## [Interfaceフォルダ](/Scripts/Interface)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
