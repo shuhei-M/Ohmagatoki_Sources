@@ -88,24 +88,24 @@
 ## [Playerフォルダ](/Scripts/Player)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
-| [DifficultyPlayerParam.cs](/Scripts/Player/DifficultyPlayerParam.cs) |  |  |
-| [KatanaBehaviour.cs](/Scripts/Player/KatanaBehaviour.cs) |  |  |
-| [Player_Animation.cs](/Scripts/Player/Player_Animation.cs) |  |  |
-| [Player_Input.cs](/Scripts/Player/Player_Input.cs) |  |  |
-| [Player_Move.cs](/Scripts/Player/Player_Move.cs) |  |  |
-| [PlayerB_State.cs](/Scripts/Player/PlayerB_State.cs) |  |  |
-| [PlayerBehaviour.cs](/Scripts/Player/PlayerBehaviour.cs) |  |  |
-| [PlayerEffectManager.cs](/Scripts/Player/PlayerEffectManager.cs) |  |  |
-| [PlayerParam.cs](/Scripts/Player/PlayerParam.cs) | プレイヤーパラメーターScriptableObject。 |  |
-| [TeleportationAttackCapsule.cs](/Scripts/Player/TeleportationAttackCapsule.cs) |  |  |
+| [DifficultyPlayerParam.cs](/Scripts/Player/DifficultyPlayerParam.cs) | プレイヤーパラメーターScriptableObject。<br>各難易度毎に一つずつ作成する。（Easy, Normal, Hard, Maniac の計4個） |  |
+| [KatanaBehaviour.cs](/Scripts/Player/KatanaBehaviour.cs) | プレイヤーの振るう刀の振る舞いを制御する。敵に通常（弱・強）攻撃が当たったかどうかはここで判定する。 |  |
+| [Player_Animation.cs](/Scripts/Player/Player_Animation.cs) | プレイヤーのアニメーション制御の処理を持つ。<br>機能はPlayerBehaviourクラスで利用する。 |  |
+| [Player_Input.cs](/Scripts/Player/Player_Input.cs) | プレイヤーの入力情報を管理する。<br>個々の情報をもとにPlayerBehaviourクラスでプレイヤーの振る舞いを決定する。 |  |
+| [Player_Move.cs](/Scripts/Player/Player_Move.cs) | プレイヤーの移動・回転の処理を持つ。<br>機能はPlayerBehaviourクラスで利用する。 |  |
+| [PlayerB_State.cs](/Scripts/Player/PlayerB_State.cs) | PlayerBehaviourのパーシャルクラス。<br>プレイヤーの持つステートを設定する。 | 【工夫】ステートマシン(有限オートマトン)のStateMachineジェネリッククラスを使用。 |
+| [PlayerBehaviour.cs](/Scripts/Player/PlayerBehaviour.cs) | 	プレイヤーの挙動を管理するパーシャルクラス。Update関数等のUnityの独自の関数はこここに記載する。 | 【工夫】IDamageableComponentインターフェイスを継承。ボス敵、ザコ敵とのダメージのやり取りをインターフェイスで行う。 |
+| [PlayerEffectManager.cs](/Scripts/Player/PlayerEffectManager.cs) | プレイヤーが発生させるエフェクトを生成させるクラス。<br>機能はPlayerBehaviourクラスで利用する。<br>プレイヤーの足元に追従するエフェクトと任意の場所に生成させるエフェクトの2種類に分類した。 |  |
+| [PlayerParam.cs](/Scripts/Player/PlayerParam.cs) | 各難易度毎のプレイヤーパラメーターを一括で管理するScriptableObject。 |  |
+| [TeleportationAttackCapsule.cs](/Scripts/Player/TeleportationAttackCapsule.cs) | 高速移動攻撃が成功したかどうかを判定する。 |  |
 | ▼[AnimationStateMachineBehaviourフォルダ](/Scripts/Player/AnimationStateMachineBehaviour) |  |  |
-| [AttackPramResetSMB.cs](/Scripts/Player/AnimationStateMachineBehaviour/AttackPramResetSMB.cs) |  |  |
-| [HeavyAttackSMB.cs](/Scripts/Player/AnimationStateMachineBehaviour/HeavyAttackSMB.cs) |  |  |
-| [LightAttackSMB.cs](/Scripts/Player/AnimationStateMachineBehaviour/LightAttackSMB.cs) |  |  |
+| [AttackPramResetSMB.cs](/Scripts/Player/AnimationStateMachineBehaviour/AttackPramResetSMB.cs) | 特定のアニメーションステートを離れた際に、アニメーターのパラメータを一部リセットする。 |  |
+| [HeavyAttackSMB.cs](/Scripts/Player/AnimationStateMachineBehaviour/HeavyAttackSMB.cs) | 強攻撃のアニメーションステートに入った時と離れた時の処理。<br>エフェクトの生成や、アニメーターのパラメータのリセット等を行う。 |  |
+| [LightAttackSMB.cs](/Scripts/Player/AnimationStateMachineBehaviour/LightAttackSMB.cs) | 弱攻撃のアニメーションステートに入った時と離れた時の処理。<br>エフェクトの生成や、アニメーターのパラメータのリセット等を行う。 |  |
 | ▼[JustAvoidanceフォルダ](/Scripts/Player/JustAvoidance) |  |  |
-| [CapsuleJustAvoidance.cs](/Scripts/Player/JustAvoidance/CapsuleJustAvoidance.cs) |  |  |
-| [CapsuleWarning.cs](/Scripts/Player/JustAvoidance/CapsuleWarning.cs) |  |  |
-| [JustAvoidanceSensor.cs](/Scripts/Player/JustAvoidance/JustAvoidanceSensor.cs) |  |  |
+| [CapsuleJustAvoidance.cs](/Scripts/Player/JustAvoidance/CapsuleJustAvoidance.cs) | ジャスト回避の判定を行う。 |  |
+| [CapsuleWarning.cs](/Scripts/Player/JustAvoidance/CapsuleWarning.cs) | プレイヤーの近くに危険物が迫っているかどうか判定する。 |  |
+| [JustAvoidanceSensor.cs](/Scripts/Player/JustAvoidance/JustAvoidanceSensor.cs) | 上記の二つの判定用のカプセルを一括で管理する。<br>プレイヤーはこのクラスを参照する。 |  |
 ## [Post-processingフォルダ](/Scripts/Post-processing)
 | ソースファイル | 概要 | 備考 |
 | --- | --- | --- |
